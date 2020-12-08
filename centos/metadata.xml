@@ -2,11 +2,9 @@
 <plugin id="centos">
   <mirror-site id="centos">
     <name>CentOS Mirror</name>
-    <storage type="file"></storage>
-    <advertiser>
-      <interface>file:http</interface>
-      <interface>file:rsync</interface>
-    </advertiser>
+    <storage type="file"/>
+    <advertiser type="http"/>
+    <advertiser type="rsync"/>
     <initializer>
       <executable>updater.py</executable>
     </initializer>
@@ -17,11 +15,9 @@
   </mirror-site>
   <mirror-site id="centos-altarch">
     <name>CentOS AltArch Mirror</name>
-    <storage type="file"></storage>
-    <advertiser>
-      <interface>file:http</interface>
-      <interface>file:rsync</interface>
-    </advertiser>
+    <storage type="file"/>
+    <advertiser type="http"/>
+    <advertiser type="rsync"/>
     <initializer>
       <executable>updater.py</executable>
     </initializer>
