@@ -3,7 +3,7 @@
   <mirror-site id="centos">
     <name>CentOS Mirror</name>
     <storage type="file"/>
-    <advertiser type="http"/>
+    <advertiser type="httpdir"/>
     <advertiser type="rsync"/>
     <initializer>
       <executable>updater.py</executable>
@@ -16,7 +16,7 @@
   <mirror-site id="centos-altarch">
     <name>CentOS AltArch Mirror</name>
     <storage type="file"/>
-    <advertiser type="http"/>
+    <advertiser type="httpdir"/>
     <advertiser type="rsync"/>
     <initializer>
       <executable>updater.py</executable>
