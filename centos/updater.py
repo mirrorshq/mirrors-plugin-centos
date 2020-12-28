@@ -1,15 +1,14 @@
 #!/usr/bin/python3
 # -*- coding: utf-8; tab-width: 4; indent-tabs-mode: t -*-
 
-import sys
 import time
-import json
 import subprocess
+import mirrors.plugin
 
 
 def main():
-    id = json.loads(sys.argv[1])["id"]
-    dataDir = json.loads(sys.argv[1])["storage-file"]["data-directory"]
+    id = mirrors.plugin.params["id"]
+    dataDir = mirrors.plugin.params["storage-file"]["data-directory"]
     if id == "centos":
         rsyncSource = "rsync://mirrors.tuna.tsinghua.edu.cn/centos"
     elif id == "centos-altarch":
