@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<plugin id="centos">
+<mirror-sites>
   <mirror-site id="centos">
     <name>CentOS Mirror</name>
     <storage type="file"/>
