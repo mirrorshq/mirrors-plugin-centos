@@ -26,4 +26,4 @@
       <schedule type="interval">4h</schedule>
     </updater>
   </mirror-site>
-</plugin>
+</mirror-sites>
